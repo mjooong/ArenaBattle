@@ -7,14 +7,14 @@
 #include "ABAIController.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class ARENABATTLE_API AABAIController : public AAIController
 {
 	GENERATED_BODY()
-	
-public:
+
+	public:
 	AABAIController();
 
 	void RunAI();
@@ -25,9 +25,8 @@ protected:
 
 private:
 	UPROPERTY()
-	TObjectPtr<class UBlackboardData> BBAsset ;
+	TObjectPtr<class UBlackboardData> BBAsset;
 
 	UPROPERTY()
-	TObjectPtr<class UBehaviorTree> BTAsset ;
-
+	TObjectPtr<class UBehaviorTree> BTAsset;
 };
